@@ -20,7 +20,7 @@
                                 <input id="about" type="text" placeholder="Tell About Yourself">
                             </div>
                             <div class="button-update">
-                                <button>UPDATE</button>
+                                <router-link to="/"><button>UPDATE</button></router-link>
                             </div>
                         </div>
                     </div>

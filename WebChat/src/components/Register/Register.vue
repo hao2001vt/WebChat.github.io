@@ -51,17 +51,6 @@ export default {
                 })
             .then(() =>{
                     const key = user.user.uid
-                    Firebase.database()
-                    .ref('messages')
-                    .child(key)
-                    .set({name:"1111"})
-                    .then(() =>{
-                        console.log("Create Message Success...");
-                    })
-                    .catch((err) =>{
-                        console.log(err);
-                        
-                    })
                     const newUser ={
                         name:user.user.displayName,
                         email:user.user.email,
